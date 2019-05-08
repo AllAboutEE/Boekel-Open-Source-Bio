@@ -101,7 +101,7 @@ void Boekel::OpenSourceBio::waitForResponse(unsigned char* _data, unsigned char 
 
 /**
  * @brief Sets the data buffer, using multiple transfers to 
- *        obtain up to 255 bytes transfered
+ *        obtain up to 255 bytes transferred
  * 
  * @author Miguel (3/28/2015)
  * 
@@ -883,7 +883,7 @@ bool Boekel::OpenSourceBio::stepGraph(unsigned int sampleTimeMinutes, unsigned l
             break;
         }
         
-        displayFilledRectangle(0,60,300,30,COLOR_BLACK,COLOR_BLACK,0); // delete any previous text incase user changed probes
+        displayFilledRectangle(0,60,300,30,COLOR_BLACK,COLOR_BLACK,0); // delete any previous text in case user changed probes
         displayText(50, 60,OpenSourceBio::COLOR_WHITE,OpenSourceBio::COLOR_BLACK, type_name);
 
         if(getReadingType() == READING_TYPE_PH)
@@ -1069,7 +1069,7 @@ bool Boekel::OpenSourceBio::barGraph(unsigned int sampleTimeMinutes, unsigned lo
             break;
         }
 
-        displayFilledRectangle(0,60,300,30,COLOR_BLACK,COLOR_BLACK,0); // delete any previous text incase user changed probes
+        displayFilledRectangle(0,60,300,30,COLOR_BLACK,COLOR_BLACK,0); // delete any previous text in case user changed probes
         displayText(50, 60,OpenSourceBio::COLOR_WHITE,OpenSourceBio::COLOR_BLACK, type_name);
 
         if(getReadingType() == READING_TYPE_PH)

@@ -57,7 +57,7 @@ void draw_common()
 
   if(osb.getTemperatureValid())
   {
-    dtostrf(osb.getTemperature(), 3, 1, buffer); // getTemperature returns an integer, wee need to change it to a char aray to display it.
+    dtostrf(osb.getTemperature(), 3, 1, buffer); // getTemperature returns an integer, wee need to change it to a char array to display it.
     osb.displayText(160,30,OpenSourceBio::COLOR_WHITE,OpenSourceBio::COLOR_TRANSPARENT,buffer);
     Serial.println(buffer);
   }
