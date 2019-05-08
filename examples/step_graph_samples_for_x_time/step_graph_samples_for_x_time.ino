@@ -18,7 +18,7 @@ void setup()
 //Main program to print text
 void loop()
 {
-    // Note: The function stepGraph has a third (optional) paramter, sample size. If not specified the 
+    // Note: The function stepGraph has a third (optional) parameter, sample size. If not specified the 
     // default value is 64. The max value can be 250 
     // e.g. osb.stepGraph(SAMPLING_TIME_MINUTES,MAX_EXPECTED_VALUE,200) will take 200 samples over the given sampling time.
     if(osb.stepGraph(SAMPLING_TIME_MINUTES,MAX_EXPECTED_VALUE)) // check if the sampling session is running
